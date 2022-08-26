@@ -96,7 +96,7 @@ p {
 }
 
 .main {
-    background: url(./images/background-1.png);
+    background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url(./images/background-1.png);
     background-size: cover;
     height: 100vh;
     width: 100%;
@@ -164,7 +164,7 @@ p {
 }
 
 .about {
-    background: url(./images/background-2.png);
+    background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url(./images/background-2.png);
     background-size: cover;
     height: 90vh;
     width: 100%;
