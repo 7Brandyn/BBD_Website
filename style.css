@@ -1,9 +1,11 @@
 :root {
     --primary-text-color: #303030;
+    --light-color: #9e9e9e;
     --secondary-text-color: #e8e8e8;
-    --hover-text-color: #ff0000;
-    --button-color: #e75e5e;
-    --primary-color: #ff0000;
+    --hover-text-color: #c51f3a89;
+    --primary-color: #a4132b;
+    --primary-dark: #630918;
+    --primary-lite: #984855;
     --primary-hover-color: #fff000;
 }
 
@@ -28,7 +30,7 @@ p {
 }
 
 .nav-item a:hover {
-    color: var(--hover-text-color);
+    color: var(--primary-color);
 }
 
 .navbar-brand {
@@ -38,6 +40,12 @@ p {
 
 .navbar-brand > img {
     height: 50px;
+}
+
+.logo-text {
+    font-family: 'Poppins', sans-serif;
+    font-size: .64rem;
+    font-weight: 600;
 }
 
 .search {
@@ -61,10 +69,10 @@ p {
 }
 
 .btn1:hover {
-    background-color: #303030;
+    background-color: var(--primary-dark);
 }
 
-.bi-robot {
+.bi-bag {
     font-size: 30px;
     color: var(--primary-text-color);
     cursor: pointer;
@@ -72,7 +80,7 @@ p {
     transition: all 0.4s;
 }
 
-.bi-robot:hover {
+.bi-bag:hover {
     color: var(--primary-color);
 }
 
@@ -110,32 +118,34 @@ p {
     color: var(--primary-text-color);
 }
 
-.mbtn1, .mbtn2 {
+.mbtn1 {
     height: 50px;
     width: 25%;
     outline: none;
     border-radius: 50px;
     transition: all 0.4s;
-}
-
-.mbtn1 {
     border: none;
     color: var(--secondary-text-color);
-    background-color: var(--button-color);
-}
-
-.mbtn1:hover {
-    background-color: var(--button-color);
+    background-color: var(--primary-color);
 }
 
 .mbtn2 {
+    height: 50px;
+    width: 25%;
+    outline: none;
+    border-radius: 50px;
+    transition: all 0.4s;  
     background-color: transparent;
-    color: var(--button-color);
-    border: 1px solid var(--button-color);
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+
+.mbtn1:hover {
+    background-color: var(--primary-dark);
 }
 
 .mbtn2:hover {
-    background-color: var(--button-color);
+    background-color: var(--primary-dark);
     color: var(--secondary-text-color);
 }
 
@@ -183,6 +193,7 @@ p {
 .welcome {
     background-color: var(--primary-color);
 }
+
 .welcome h1 {
     font-size: 3rem;
     font-weight: bold;
@@ -202,4 +213,241 @@ p {
 .welcome h2 {
     font-weight: lighter;
     padding: 10px 0;
+}
+
+.product h1 {
+    font-size: 3rem;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.product p:nth-child(1) {
+    font-size: 18px;
+    font-weight: 500;
+    padding-top: 100px;
+}
+
+.product p:nth-child(4) {
+    color: var(--primary-text-color);
+}
+
+.gender {
+    color: var(--primary-text-color);
+    text-align: end;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.product .card {
+    border: none;
+    border-radius: 0;
+    cursor: pointer;
+}
+
+.product .card-body {
+    border: 1px dashed var(--light-color);
+}
+
+.head1 {
+    margin: 0;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.price {
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.per1 {
+    color: var(--light-color);
+}
+
+.btnc {
+    display: block;
+    height: 50px;
+    width: 50%;
+    border: none;
+    outline: none;
+    color: var(--secondary-text-color);
+    background: var(--primary-color);
+    border-radius: 50px;
+    margin: 0 auto;;
+    transition: all 0.4s;
+}
+
+.btnc:hover {
+    outline: none;
+    border: 1px solid var(--primary-color);
+    background-color: transparent;
+    color: var(--primary-color);
+    border-radius: 50px;
+}
+
+.discount {
+    background: var(--primary-color);
+    color: var(--secondary-text-color);
+}
+
+.discount a {
+    text-decoration: none;
+    color: var(--secondary-text-color);
+}
+
+.bi-instagram {
+    color: var(--secondary-text-color);
+    font-size: 4rem ;
+    transition: all 0.4s;
+}
+
+.bi-instagram:hover {
+    transform: rotateY(5deg);
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+}
+
+.store h1 {
+    font-size: 3rem;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.store p:nth-child(1) {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.store p:nth-child(4) {
+    font-size: 18px;
+    color: var(--primary-text-color);
+}
+
+.store i {
+    font-size: 45px;
+}
+
+.store .card {
+    border-radius: 0;
+    border: none;
+    transition: all 0.4s;
+    cursor: pointer;
+}
+
+.store .card:hover {
+    background-color: var(--hover-text-color);
+    color: var(--secondary-text-color);
+}
+
+.store .card:hover .per1 {
+    color: var(--secondary-text-color);
+}
+
+.seller h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.seller i {
+    color: var(--primary-color);
+}
+
+.seller .card {
+    border: none;
+    border-radius: 0;
+}
+
+.contact {
+    /* background: url(./images/background-1.png) no-repeat;
+    background-size: cover;
+    width: 100%; */
+
+    background-color: var(--primary-color);
+}
+
+.contact h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--secondary-text-color);
+}
+
+.contact p {
+    color: var(--secondary-text-color);
+}
+
+.circle {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: var(--secondary-text-color);
+    color: var(--primary-text-color);
+    text-align: center;
+    padding-top: 15px;
+    font-size: 18px;
+}
+
+.contact input {
+    height: 40px;
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: var(--secondary-text-color);
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.contact textarea {
+    height: 100px;
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: var(--secondary-text-color);
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.cbtn {
+    height: 50px;
+    width: 35%;
+    outline: none;
+    border: none;
+    color: var(--primary-color);
+    background-color: var(--secondary-text-color);
+    border-radius: 50px;
+    font-weight: lighter;
+    transition: all 0.4s;
+}
+
+.cbtn:hover {
+    background: var(--primary-color);
+    color: var(--secondary-text-color);
+    border: 1px solid var(--secondary-text-color);
+    border-radius: 50px;
+}
+
+.footer {
+    background: var(--primary-dark);
+}
+
+.s1 {
+    height: 40px;
+    width: 40px;
+    background-color: transparent;
+    border: 1px solid var(--secondary-text-color);
+    color: var(--secondary-text-color);
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    padding-top: 9px;
+    margin-left: 10px;
+    transition: all 0.4s;
+    cursor: pointer;
+}
+
+.s1:hover {
+    background-color: var(--primary-color);
+    border: none;
+}
+
+.footer p {
+    color: var(--secondary-text-color);
 }
