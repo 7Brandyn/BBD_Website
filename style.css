@@ -19,6 +19,16 @@ p {
     font-family: 'Poppins', sans-serif;
 }
 
+h1 {
+    font-family: 'Permanent Marker', cursive;
+}
+
+.bi-caret-left-fill,
+.bi-caret-right-fill {
+    color: var(--secondary-text-color);
+    font-size: 40px;
+}
+
 .nav-item a {
     text-decoration: none;
     color: var(--primary-text-color);
@@ -102,12 +112,6 @@ p {
     width: 100%;
 }
 
-
-.main h1 {
-    font-size: 4.6rem;
-    font-family: 'Permanent Marker', cursive;
-}
-
 .main p:nth-child(1), .about p:nth-child(1) {
     font-size: 18px;
     font-weight: 500;
@@ -170,11 +174,6 @@ p {
     width: 100%;
 }
 
-.main h1 {
-    font-size: 4.6rem;
-    font-family: 'Permanent Marker', cursive;
-}
-
 .main p:nth-child(1) {
     font-size: 18px;
     font-weight: 500;
@@ -187,7 +186,6 @@ p {
 
 .about h1 {
     font-size: 3rem;
-    font-family: 'Permanent Marker', cursive;
 }
 
 .welcome {
@@ -196,7 +194,6 @@ p {
 
 .welcome h1 {
     font-size: 3rem;
-    font-weight: bold;
 }
 
 .welcome .card {
@@ -217,7 +214,6 @@ p {
 
 .product h1 {
     font-size: 3rem;
-    font-family: 'Permanent Marker', cursive;
 }
 
 .product p:nth-child(1) {
@@ -257,6 +253,10 @@ p {
     margin: 0;
 }
 
+.cost {
+    font-weight: bold;
+}
+
 .per1 {
     color: var(--light-color);
 }
@@ -280,6 +280,28 @@ p {
     background-color: transparent;
     color: var(--primary-color);
     border-radius: 50px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    z-index: 999;
+}
+
+.modal-header {
+    justify-content: center;
+}
+
+.product_view .modal-dialog {
+    max-width: 800px; width: 100%;
+}
+
+.pre-cost {
+    text-decoration: line-through; 
+    color: #a5a5a5;
+}
+
+.space-ten {
+    padding: 10px 0;
 }
 
 .discount {
@@ -309,7 +331,6 @@ p {
 
 .store h1 {
     font-size: 3rem;
-    font-family: 'Permanent Marker', cursive;
 }
 
 .store p:nth-child(1) {
@@ -344,7 +365,6 @@ p {
 
 .seller h1 {
     font-size: 3rem;
-    font-weight: bold;
 }
 
 .seller i {
@@ -366,7 +386,6 @@ p {
 
 .contact h1 {
     font-size: 3rem;
-    font-weight: bold;
     color: var(--secondary-text-color);
 }
 
@@ -428,18 +447,15 @@ p {
     background: var(--primary-dark);
 }
 
-.s1 {
-    height: 40px;
-    width: 40px;
-    background-color: transparent;
-    border: 1px solid var(--secondary-text-color);
+.privacy {
+    text-align: end;
+}
+
+.privacy a {
+    text-decoration: none;
     color: var(--secondary-text-color);
-    border-radius: 50%;
     display: inline-block;
     text-align: center;
-    padding-top: 9px;
-    margin-left: 10px;
-    transition: all 0.4s;
     cursor: pointer;
 }
 
