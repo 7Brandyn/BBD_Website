@@ -467,3 +467,5 @@ h1 {
 .footer p {
     color: var(--secondary-text-color);
 }
+
+#more {display: none;}
