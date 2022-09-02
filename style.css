@@ -6,7 +6,18 @@
     --primary-color: #a4132b;
     --primary-dark: #630918;
     --primary-lite: #984855;
-    --primary-hover-color: #fff000;
+    --primary-hover-color: #a4132b;
+}
+
+a,
+a::after,
+a::before {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color: var(--primary-hover-color);
 }
 
 * {
@@ -210,6 +221,10 @@ h1 {
 .welcome h2 {
     font-weight: lighter;
     padding: 10px 0;
+}
+
+.hicon {
+    height: 42px;
 }
 
 .product h1 {
