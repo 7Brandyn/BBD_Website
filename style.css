@@ -1,6 +1,7 @@
 :root {
     --primary-text-color: #303030;
-    --light-color: #9e9e9e;
+    --primary-text-dull: #303030b0;
+    --light-color: #ebebeb;
     --secondary-text-color: #e8e8e8;
     --hover-text-color: #c51f3a89;
     --primary-color: #a4132b;
@@ -40,6 +41,21 @@ h1 {
     font-size: 40px;
 }
 
+.nav-bar-blur {
+    background-color: #ebebebc4;
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    top:0;
+    width: 100%;
+    z-index: 2;
+    -webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    -o-filter: blur(2px);
+    -ms-filter: blur(2px);
+    filter: blur(2px);
+}
+
 .nav-item a {
     text-decoration: none;
     color: var(--primary-text-color);
@@ -60,7 +76,7 @@ h1 {
 }
 
 .navbar-brand > img {
-    height: 50px;
+    height: 40px;
 }
 
 .logo-text {
@@ -117,7 +133,7 @@ h1 {
 }
 
 .main {
-    background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url(./images/background-1.png);
+    background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url(./images/background-1.jpg);
     background-size: cover;
     height: 100vh;
     width: 100%;
@@ -193,6 +209,11 @@ h1 {
 
 .main p:nth-child(4) {
     color: var(--primary-text-color);
+}
+
+.promo-pic {
+    display: inline-block;
+    width: 100%;
 }
 
 .about h1 {
@@ -273,7 +294,7 @@ h1 {
 }
 
 .per1 {
-    color: var(--light-color);
+    color: var(--primary-text-dull);
 }
 
 .btnc {
