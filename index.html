@@ -1600,12 +1600,21 @@
             </div>
           </div>
 
+
+
+
+
           <div class="col-lg-6">
-            <input type="text" placeholder="Name...">
-            <input type="text" placeholder="Email...">
-            <input type="text" placeholder="Phone...">
-            <textarea name="" id="" placeholder="Message..."></textarea>
-            <button class="cbtn mt-3">Send Message</button>
+            <form action="https://formspree.io/f/myyvewvv" method="POST" enctype="multipart/form-data">
+            <input class="input" type="text" name="name" placeholder="Name..." required>
+            <input class="input" type="email" name="email" placeholder="Email..." required>
+            <input class="input" type="tel" id="phone" name="phone" placeholder="Phone...">
+            <textarea class="input-m" name="message" placeholder="Message..." required></textarea>
+            <!-- <input class="upload" type="file" name="upload"> -->
+            <button type="submit" class="cbtn mt-3">Send Message</button>
+
+          </form>
+
           </div>
         </div>
       </div>
