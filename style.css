@@ -432,6 +432,17 @@ h1 {
     border-radius: 0;
 }
 
+.bg-card {
+    transition: transform .7s ease-in-out;
+}
+
+.bg-card:hover {
+    transform: scale(1.2);
+    box-shadow: 5px 5px 30px gray;
+    cursor: pointer;
+    z-index: 1;
+  }
+
 .contact {
     /* background: url(./images/background-1.png) no-repeat;
     background-size: cover;
